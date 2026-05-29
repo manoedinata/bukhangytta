@@ -129,7 +129,7 @@ def extract_number(filename):
     match = re.search(r'\d+', filename)
     return int(match.group()) if match else 0
 
-dir_path = "img_empty"
+dir_path = "img"
 all_images = [
     os.path.join(dir_path, filename) 
     for filename in sorted(os.listdir(dir_path), key=extract_number) 
